@@ -1,0 +1,58 @@
+.SignupPage {
+    max-width: 600px;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+    color: black;
+    margin-top: -13%;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.SignupPage>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.SignupPage>form>input {
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: none;
+    outline-width: 0;
+    font-size: 1rem;
+    padding: 5px 15px;
+}
+
+.SignupPage>form>select {
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: none;
+    outline-width: 0;
+    font-size: 1rem;
+    padding: 5px 15px;
+    cursor: pointer
+}
+
+.SignupPage>form>button {
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    background-color: #e50914;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.SignupPage>form>button:hover {
+    color: antiquewhite;
+    background-color: #980c0c;
+}

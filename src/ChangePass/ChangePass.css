@@ -1,0 +1,48 @@
+.changePage {
+    max-width: 420px;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+    margin-top: 10rem;
+}
+
+.changePage>form>h1 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.changePage> {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.changePage>form>input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: none;
+    outline-width: 0;
+    font-size: 1rem;
+    padding: 5px 15px;
+}
+
+.changePage>form>button {
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    background-color: #e50914;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.changePage>form>button:hover {
+    color: antiquewhite;
+    background-color: #980c0c;
+}

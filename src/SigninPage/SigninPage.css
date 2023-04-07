@@ -1,0 +1,63 @@
+.SigninPage {
+    max-width: 420px;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+    margin-top: -8%;
+}
+
+.SigninPage>h1 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.SigninPage>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.SigninPage>form>input {
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: none;
+    outline-width: 0;
+    font-size: 1rem;
+    padding: 5px 15px;
+}
+
+.SigninPage>form>button {
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    background-color: #e50914;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.SigninPage>form>button:hover {
+    color: antiquewhite;
+    background-color: #980c0c;
+}
+
+.SigninPage>form>h4 {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.span {
+    color: gray;
+}
+
+.SigninPage__link {
+    color: white;
+}
+
+.SigninPage__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

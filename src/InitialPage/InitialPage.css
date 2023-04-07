@@ -1,0 +1,119 @@
+.InitialPage {
+    position: relative;
+    height: 100%;
+    background: url("../Images/netflixBackground.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.InitialPage__logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding: 29px;
+    z-index: 2;
+}
+
+.InitialPage__button {
+    position: fixed;
+    right: 120px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #111;
+    background-color: #e50914;
+    border: none;
+    z-index: 2;
+}
+
+.InitialPage__gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0)60%,
+            rgba(0, 0, 0, 0.8)100%);
+}
+
+.signin {
+    position: fixed;
+    right: 20px;
+}
+
+
+.InitialPage__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    z-index: 1;
+}
+
+.InitialPage__body>h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.InitialPage__body>h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.InitialPage__body>h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.InitialPage__getStart {
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+@media(max-width:600px) {
+    .InitialPage__logo {
+        width: 130px;
+    }
+
+    .InitialPage__button {
+        font-size: 0.8rem;
+    }
+
+    .InitialPage__body {
+        position: absolute;
+        top: 20%;
+    }
+
+    .InitialPage__body>h1 {
+        font-size: 2.1rem;
+    }
+
+    .InitialPage__body>h2 {
+        font-size: 1.4rem;
+    }
+
+    .InitialPage__body>h3 {
+        font-size: 1.1rem;
+    }
+
+    .InitialPage__getStart {
+        font-size: 0.8rem;
+    }
+}
