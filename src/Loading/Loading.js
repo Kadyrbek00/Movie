@@ -2,9 +2,9 @@ import "./Loadin.css"
 
 export default function Loading() {
     return (
-        <>
-            <div class="loadingio-spinner-dual-ring-par79yeh4l">
-                <div class="ldio-3un86u1z8vh">
+        <div className="container-loading">
+            <div className="loading">
+                <div className="loading-spinner">
                     <div></div>
                     <div>
                         <div>
@@ -12,6 +12,6 @@ export default function Loading() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

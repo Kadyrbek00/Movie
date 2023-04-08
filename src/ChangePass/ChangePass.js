@@ -10,7 +10,7 @@ export default function ChangePassword() {
     const auth = getAuth();
 
     const user = auth.currentUser;
-    const newPassword = 'getASecureRandomPassword()';
+    // const newPassword = 'getASecureRandomPassword()';
 
     const handleSubmit = (e) => {
         e.preventDefault()

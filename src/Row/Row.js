@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import "./Row.css"
 import axios from "../Requests/axios";
 
-function Row({ title, fetchUrl, isLargeRow = false }) {
+function Row({ search, title, fetchUrl, isLargeRow = false }) {
     const [movies, setMovies] = useState([[]])
 
 
     const base_url = "https://image.tmdb.org/t/p/original/"
 
+    async function fetchData() {
+        const request = await axios.get(fetchUrl);
+        setMovies(request.data.results);
+        return request
+    }
     useEffect(() => {
-        async function fetchData() {
-            const request = await axios.get(fetchUrl);
-            setMovies(request.data.results);
-            return request
-        }
         fetchData()
     }, [])
 

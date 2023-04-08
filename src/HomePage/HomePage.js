@@ -8,7 +8,7 @@ import Loading from "../Loading/Loading";
 export default function HomePage() {
     const [movie, setMovie] = useState([]);
     const [loading, setLoading] = useState(true)
-
+    const [search, setSearch] = useState('')
 
     useEffect(() => {
         async function fetchData() {
@@ -57,16 +57,20 @@ export default function HomePage() {
                                 {truncate(movie?.overview, 140)}
                             </h2>
                         </div>
+                        <input
+                            onChange={(e) => console.log(e.target.value)}
+                            type="text"
+                            placeholder="Search" />
                     </header>
 
-                    <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOrginals} isLargeRow />
-                    <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-                    <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-                    <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
-                    <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
-                    <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-                    <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-                    <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+                    <Row search={search} title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOrginals} isLargeRow />
+                    <Row search={search} title="Trending Now" fetchUrl={requests.fetchTrending} />
+                    <Row search={search} title="Top Rated" fetchUrl={requests.fetchTopRated} />
+                    <Row search={search} title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+                    <Row search={search} title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+                    <Row search={search} title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+                    <Row search={search} title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+                    <Row search={search} title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
                 </div>
             )}
         </>

@@ -6,7 +6,6 @@ import { selectUser } from "../app/features/userSlice"
 import { auth } from "../firebase";
 import userIcon from "../Images/icon.jpg"
 import { Link } from "react-router-dom";
-import ChangePassword from "../ChangePass/ChangePass";
 
 export default function ProfilePage() {
     const user = useSelector(selectUser)

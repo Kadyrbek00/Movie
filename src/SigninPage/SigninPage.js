@@ -91,6 +91,7 @@ export default function SigninPage() {
                             onChange={(e) => emailHandler(e)}
                             onBlur={(e) => blurHandler(e)}
                             type="email"
+                            value={email}
                             placeholder="Email" />
                         {(emailDirty && emailError) && <p style={{ color: "red", textAlign: "left", marginTop: "-13px", marginBottom: "13px" }}>{emailError}</p>}
 
